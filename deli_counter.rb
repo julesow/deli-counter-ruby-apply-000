@@ -15,11 +15,12 @@ def line(katz_deli)
 end
 
 ##################################
+ number = 0 
+def take_a_number(katz_deli)
+  number +=1
+  katz_deli.push(number)
+  puts ("Welcome, You are number #{number}.")
 
-def take_a_number(katz_deli,name)
-  katz_deli.push(name)
-  puts ("Welcome, #{name}. You are number #{katz_deli.index(name)+1} in line.")
-  return name ,katz_deli.index(name)+1
 end
 #take_a_number(katz_deli,name)
 ##################################
